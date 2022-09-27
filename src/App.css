@@ -5,23 +5,28 @@
 }
 body {
     background-color: #0B2434;
+    font-family: 'Karla';
+    text-align: center;
 }
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 320px;
     height: 320px;
-    margin: 30% auto;
+    margin: 200px auto;
     background-color: #F5F5F5;
     border-radius: 10px;
+    padding: 20px;
+}
+p {
+    font-size: .8rem;
 }
 .dice-container {
     display: grid;
     grid-template: auto auto / repeat(5, 1fr);
     gap: 18px;
-
 }
 .dice {
     width: 36px;
@@ -32,25 +37,26 @@ main {
     cursor: pointer;
 }
 .dice h2 {
-    font-family: 'Karla';
     font-weight: 700;
     font-size: 21px;
     line-height: 36px;
-    text-align: center;
     color: #2B283A;
 }
 .roll-btn {
-    width: 92px;
+    width: 110px;
     height: 36px;    
     background: #5035FF;
     border: 0;
     box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
     border-radius: 4px;
-    margin-top: 26px;
-    font-family: 'Karla';
     font-weight: 700;
     font-size: 17px;
     line-height: 36px;
-    text-align: center;
     color: #FFFFFF;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.isHeld {
+    background-color: #59E391;
 }
